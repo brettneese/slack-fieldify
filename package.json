@@ -1,0 +1,36 @@
+{
+  "name": "slack-fieldify",
+  "version": "0.1.0",
+  "description": "Automagically create Slack fields from JSON objects.",
+  "author": "Brett Neese <brett@neese.rocks>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "tsc && concurrently \"npm run tsc:w\" \"node dist/index.js\" ",
+    "predeploy": "",
+    "postdeploy": "",
+    "prepublish": "",
+    "postinstall": "typings install",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings"
+  },
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brettneese/slack-fieldify"
+  },
+  "bugs": {
+    "url": "https://github.com/brettneese/slack-fieldify/issues"
+  },
+  "keywords": [
+    "slack",
+    "lodash",
+    "integrations"
+  ],
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "lodash": "^4.11.2",
+    "underscore.string": "^3.3.4"
+  }
+}
