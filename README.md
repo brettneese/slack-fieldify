@@ -25,7 +25,7 @@ See the [Slack docs](https://api.slack.com/docs/attachments#fields) for more inf
 
 - Long and short "fields"
 - Custom prefixes for multidimensional arrays
-- Humanizes and properly cases values
+- Humanizes and properly cases value
 
 ## Usage 
 slackFieldify(object, [short], [prefix])
@@ -37,6 +37,8 @@ slackFieldify(object, [short], [prefix])
 Returns: {Object} fields - a Slack-ready set of "fields" 
 
 ## Example
+
+```
 slackFieldify = require('slack-fieldify')
 
 /// In your Slack webhook....
@@ -45,6 +47,7 @@ attachments {
     fields: slackFieldify(JSON.parse(jsonDataFromAPI), true);
 }
 
+```
 ## N.b 
 
 Also works for arrays, or arrays of objects. If there's multiple objects in an array,

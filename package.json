@@ -9,7 +9,7 @@
     "start": "tsc && concurrently \"npm run tsc:w\" \"node dist/index.js\" ",
     "predeploy": "",
     "postdeploy": "",
-    "prepublish": "",
+    "prepublish": "tsc",
     "postinstall": "typings install",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
@@ -29,7 +29,6 @@
     "integrations"
   ],
   "dependencies": {
-    "dotenv": "^2.0.0",
     "lodash": "^4.11.2",
     "underscore.string": "^3.3.4"
   }
