@@ -1,7 +1,7 @@
 # Slack Fieldify 
 http://brett.neese.rocks
 
-A simple Node module that flattens a  JavaScript object into a set of "fields" compatible with Slack's API; making it easier to make Slack notifications from aribtary JSON data.  
+A simple Node module that flattens a JavaScript object into a set of "fields" compatible with Slack's API; making it easier to make Slack notifications from aribtary JSON data.  
 
 Automagically turning this:
 
@@ -27,11 +27,11 @@ See the [Slack docs](https://api.slack.com/docs/attachments#fields) for more inf
 
 ## Usage 
 
-@description Returns Slack-friendly "fields" from aribirtary JavaScript objects
-@param  {Object} inputObj
-@param  {boolean} [False] short? - Whether you want the fields to be long, for verbose data or short, for short data 
-@param  {string} [] prefix? - Prepends things to the output. Mostly used inside the function.
-@returns {Object} fields - a Slack-ready set of "fields"
+@description Returns Slack-friendly "fields" from aribirtary JavaScript objects 
+@param  {Object} inputObj 
+@param  {boolean} [False] short? - Whether you want the fields to be long, for verbose data or short, for short data  
+@param  {string} [] prefix? - Prepends things to the output. Mostly used inside the function. 
+@returns {Object} fields - a Slack-ready set of "fields" 
 
 slackFieldify(object, [short], [prefix])
 
