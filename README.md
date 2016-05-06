@@ -26,15 +26,13 @@ See the [Slack docs](https://api.slack.com/docs/attachments#fields) for more inf
 - Custom prefixes for multidimensional arrays
 
 ## Usage 
-
-@description Returns Slack-friendly "fields" from aribirtary JavaScript objects 
-@param  {Object} inputObj 
-@param  {boolean} [False] short? - Whether you want the fields to be long, for verbose data or short, for short data  
-@param  {string} [] prefix? - Prepends things to the output. Mostly used inside the function. 
-@returns {Object} fields - a Slack-ready set of "fields" 
-
 slackFieldify(object, [short], [prefix])
 
+- @description Returns Slack-friendly "fields" from aribirtary JavaScript objects 
+- @param  {Object} inputObj 
+- @param  {boolean} [False] short? - Whether you want the fields to be long, for verbose data or short, for short data  
+- @param  {string} [] prefix? - Prepends things to the output. Mostly used inside the function. 
+- @returns {Object} fields - a Slack-ready set of "fields" 
 
 ## Example
 slackFieldify = require('slack-fieldify')
