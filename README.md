@@ -10,7 +10,8 @@ Automagically turning this:
   status: 'False',
   lastProbeTime: null,
   lastTransitionTime: '2016-04-25T16:49:53Z',
-  reason: 'containers with unready status' }
+  reason: 'ContainersNotReady',
+  message: 'containers with unready status: [sti-build]' }
 ```
 
 Into this:
@@ -24,6 +25,7 @@ See the [Slack docs](https://api.slack.com/docs/attachments#fields) for more inf
 
 - Long and short "fields"
 - Custom prefixes for multidimensional arrays
+- Humanizes and properly cases values
 
 ## Usage 
 slackFieldify(object, [short], [prefix])
