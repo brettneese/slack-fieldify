@@ -31,7 +31,8 @@ slackFieldify(object, [short], [prefix])
 - @param  {Object} inputObj 
 - @param  {boolean} [False] short? - Whether you want the fields to be long, for verbose data or short, for short data  
 - @param  {string} [] prefix? - Prepends things to the output. Mostly used inside the function. 
-- @returns {Object} fields - a Slack-ready set of "fields" 
+
+Returns: {Object} fields - a Slack-ready set of "fields" 
 
 ## Example
 slackFieldify = require('slack-fieldify')
