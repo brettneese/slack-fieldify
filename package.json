@@ -1,6 +1,6 @@
 {
   "name": "slack-fieldify",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Automagically create Slack fields from JavaScript objects.",
   "author": "Brett Neese <brett@neese.rocks>",
   "license": "MIT",
