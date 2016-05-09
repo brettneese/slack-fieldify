@@ -1,16 +1,16 @@
 {
   "name": "slack-fieldify",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Automagically create Slack fields from JavaScript objects.",
   "author": "Brett Neese <brett@neese.rocks>",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "tsc && concurrently \"npm run tsc:w\" \"node dist/index.js\" ",
+    "start": "node dist/index.js",
+    "build": "tsc && concurrently \"npm run tsc:w\" \"node dist/index.js\" ",
     "predeploy": "",
     "postdeploy": "",
     "prepublish": "tsc",
-    "postinstall": "typings install",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "typings": "typings"
